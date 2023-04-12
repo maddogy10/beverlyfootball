@@ -1,0 +1,407 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: 'Bevan', cursive;
+}
+
+#logo {
+    width: 100px;
+    display: block;
+    margin-left: 7%;
+    position: absolute;
+    z-index: 100;
+}
+
+#header {
+    display: inline-flex;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    height: 75px;
+}
+#navbar {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-left: 15%;
+    align-self: center;
+    height: 75px;
+    align-items: center;
+}
+.visible {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-left: 15%;
+    align-self: center;
+    height: 75px;
+    align-items: center;
+    z-index: 1000;
+}
+#top {
+    position: relative;
+    width: 100%;
+}
+
+.footballimg {
+    position: relative;
+    max-width: 100%;
+    min-width: 100%;
+    display: block;
+}
+
+#footballimg2 {
+    filter: brightness(75%);
+}
+#footballimg1 {
+    filter: brightness(75%);
+}
+#footballimg3 {
+    filter: brightness(75%);
+}
+
+#motto {
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 90%;
+    top: 0;
+    font-size: 3vw;
+}
+#footer {
+    background-color: grey;
+    margin-bottom: 0;
+    padding-left: 5%;
+}
+
+.footercontent {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5%;
+}
+#copyright {
+    text-align: center;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+}
+#navbar a {
+    color: white;
+}
+.footercontent a {
+    color: black;
+}
+.toggle-btn {
+    width: 35px;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    display: none;
+}
+.toggle-btn span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    float: left;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    #modaltext {
+        padding-top: 10%;
+    }
+    .toggle-btn {
+        display: block;
+    
+    }
+    #navbar {
+        display: none;
+    }
+    #header {
+        display: block;
+    }
+    #navbar.visible {
+        display: inline-block;
+        position: absolute;
+        top: 75px;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0px;
+        background: orange;
+        height: auto;
+    }
+}
+
+/*@media screen and (max-width: 800px) {
+    #navbar {
+        width: 100%;
+    }
+    #navbar h3 {
+        width: 100%;
+        float: none;
+    }
+}*/
+
+#teaminfo {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(233, 107, 24, 0.483);
+}
+
+#teamstitle {
+    text-align: center;
+    background-color: orange;
+
+}
+
+.teaminfolists {
+    display: inline-flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.teaminfolists li {
+    background-color: black;
+    padding: 2px 15px;
+    color: white;
+}
+#varsityroster,
+#jvroster,
+#freshmenroster,
+#cheerroster {
+    width: 90%;
+    justify-content: center;
+    margin: 2.5% 5%;
+}
+.playerChildren {
+    border: lightgray solid 1px;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.teamname {
+    text-align: center;
+}
+
+.roster a {
+    color: white;
+}
+
+.twitter-timeline {
+    width: 90%;
+    margin: auto;
+    height: 600px;
+    padding: 20px;
+}
+.newsarticle {
+    border-left: 0px;
+    border: lightgray solid 1px;
+    width: 100%;
+    padding: 10px;
+}
+#newsarticles {
+    border-left: 0px;
+}
+
+#Articles {
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.contactcontainer {
+    border: lightgrey 1px solid;
+    width: 30%;
+    border-radius: 5px;
+    margin: 2.5%;
+    padding: 10px;
+}
+.contactstuff,
+.contactinfo {
+    overflow-wrap: break-word;
+}
+#contacttitle {
+    text-align: center;
+}
+#topnav {
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 145, 0);
+    display: block;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+#modal {
+    background-color: black;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    min-height: 50%;
+    align-items: center;
+    font-size: x-large;
+}
+#modaltext {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#modaltext h2 {
+    height: 100%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#teamscheds {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+#rostertables {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#rostertables div {
+    width: 400px;
+    
+}
+
+.teamschedule {
+    width: 400px;
+    display: inline-flex;
+}
+.teamschedule img {
+    width: 90%;
+    margin: 2.5% 5%;
+    height: fit-content;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.text-box {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.slide-up {
+    background-color: orange;
+}
+
+#contacts {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.mySlides {
+  margin-left: 0;
+}
+
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 100;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#top a:hover {
+    background-color: rgba(0,0,0,0.8);
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+   /* from {margin-left: 100%;}
+    to {margin-left: 0%;}*/
+}
+
+#dots {
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
